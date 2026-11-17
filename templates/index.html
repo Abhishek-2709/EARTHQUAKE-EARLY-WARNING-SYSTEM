@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthquake Event Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-size: 1.1em;
+            color: #555;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Predict Earthquake Event</h1>
+    <form action="/predict" method="post">
+        <div class="form-group">
+            <label for="latitude">Latitude:</label>
+            <input type="text" id="latitude" name="latitude" required>
+        </div>
+
+        <div class="form-group">
+            <label for="longitude">Longitude:</label>
+            <input type="text" id="longitude" name="longitude" required>
+        </div>
+
+        <div class="form-group">
+            <label for="depth">Depth:</label>
+            <input type="text" id="depth" name="depth" required>
+        </div>
+
+        <div class="form-group">
+            <label for="mag">Magnitude (mag):</label>
+            <input type="text" id="mag" name="mag" required>
+        </div>
+
+        <div class="form-group">
+            <label for="magType">MagType:</label>
+            <input type="text" id="magType" name="magType" required>
+        </div>
+
+        <div class="form-group">
+            <label for="nst">Number of Stations (nst):</label>
+            <input type="text" id="nst" name="nst" required>
+        </div>
+
+        <div class="form-group">
+            <label for="gap">Gap:</label>
+            <input type="text" id="gap" name="gap" required>
+        </div>
+
+        <div class="form-group">
+            <label for="dmin">Minimum Distance (dmin):</label>
+            <input type="text" id="dmin" name="dmin" required>
+        </div>
+
+        <div class="form-group">
+            <label for="rms">RMS:</label>
+            <input type="text" id="rms" name="rms" required>
+        </div>
+
+        <div class="form-group">
+            <label for="net">Network (net):</label>
+            <input type="text" id="net" name="net" required>
+        </div>
+
+        <div class="form-group">
+            <label for="horizontalError">Horizontal Error:</label>
+            <input type="text" id="horizontalError" name="horizontalError" required>
+        </div>
+
+        <div class="form-group">
+            <label for="depthError">Depth Error:</label>
+            <input type="text" id="depthError" name="depthError" required>
+        </div>
+
+        <div class="form-group">
+            <label for="magError">Magnitude Error (magError):</label>
+            <input type="text" id="magError" name="magError" required>
+        </div>
+
+        <div class="form-group">
+            <label for="magNst">MagNst:</label>
+            <input type="text" id="magNst" name="magNst" required>
+        </div>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

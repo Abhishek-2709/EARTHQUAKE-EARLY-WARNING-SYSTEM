@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Earthquake Event Prediction</title>
+</head>
+<body>
+    <h1>Predict Earthquake Event</h1>
+    <form action="/predict" method="post">
+        Latitude: <input type="text" name="latitude"><br>
+        Longitude: <input type="text" name="longitude"><br>
+        Depth: <input type="text" name="depth"><br>
+        Magnitude (mag): <input type="text" name="mag"><br>
+        MagType: <input type="text" name="magType"><br>
+        Number of Stations (nst): <input type="text" name="nst"><br>
+        Gap: <input type="text" name="gap"><br>
+        Minimum Distance (dmin): <input type="text" name="dmin"><br>
+        RMS: <input type="text" name="rms"><br>
+        Network (net): <input type="text" name="net"><br>
+        Horizontal Error: <input type="text" name="horizontalError"><br>
+        Depth Error: <input type="text" name="depthError"><br>
+        Magnitude Error (magError): <input type="text" name="magError"><br>
+        MagNst: <input type="text" name="magNst"><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
